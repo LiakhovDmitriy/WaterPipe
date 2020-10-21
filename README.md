@@ -3,14 +3,14 @@
 [dimaliahov@gmail.com](mailto:dimaliahov@gmail.com)
 
 
- - Hi!
-   - Application for checking the connection between points, finding the shortest path and determining the length.
+#### Hi!
+#### Application for checking the connection between points, finding the shortest path and determining the length.
 
- - Content
+#### Content
     - Photo
     - How to run
 
- - Photo
+#### Photo
  
 ![GitHub Logo](/photo/home.jpg)
 
@@ -20,4 +20,4 @@
 
 ![GitHub Logo](/photo/homw_wrong_uploud.jpg)
 
- - How to run
+#### How to run
