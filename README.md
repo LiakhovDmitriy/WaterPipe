@@ -26,19 +26,19 @@
 
 #### The source file must by like:
 
-1;2;10
-2;3;20
-3;4;30
-3;5;15
-6;7;20
-7;10;20
+1;2;10<br>
+2;3;20<br>
+3;4;30<br>
+3;5;15<br>
+6;7;20<br>
+7;10;20<br>
 
-the file must have an extension: .csv
+the file must have an extension: .csv<br>
 
 #### The checking file must by like:
 
-1;3
-6;10
-5;8
+1;3<br>
+6;10<br>
+5;8<br>
 
-the file must have an extension: .csv
+the file must have an extension: .csv<br>
