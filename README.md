@@ -10,7 +10,7 @@
     - Photo
     - How to run
 
-#### Photo
+## Photo
  
 ![GitHub Logo](/photo/home.jpg)
 
@@ -20,4 +20,4 @@
 
 ![GitHub Logo](/photo/homw_wrong_uploud.jpg)
 
-#### How to run
+## How to run
