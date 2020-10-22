@@ -21,6 +21,8 @@
 ![GitHub Logo](/photo/homw_wrong_uploud.jpg)
 
 ## How to run
+   - For the start project you need to use SDK 11.
+   - You need to add libraries (h2-1.4.196, javafx-swt, mysql-connector-java-8.0.22) to the project.<br><br>
    - Create DataBase H2;
        - Perform:
         CREATE TABLE IF NOT EXISTS ROUTING<br>
@@ -32,11 +34,7 @@
                 );<br>
         - Enter where the base is located:
         In [this](/out/production/dimaliahov/com/gmail/dimaliahov/db/DBwork.class) file.<br>
-        Change data for communication with the database.
-        
-        
-        
-
+        Change data for communication with the database.<br><br>
 ## How to use
 
 #### The source file must by like:
