@@ -31,7 +31,9 @@
                 length INT NOT NULL<br>
                 );<br>
         - Enter where the base is located:
-        In [here](/out/production/dimaliahov/com/gmail/dimaliahov/db/DBwork.class) file.
+        In [this](/out/production/dimaliahov/com/gmail/dimaliahov/db/DBwork.class) file.<br>
+        Change data for communication with the database.
+        
         
         
 
