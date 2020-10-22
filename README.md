@@ -40,12 +40,13 @@
    Use the button "Upload file" under "You need to upload the routing before you begin".<br>
    File must be like this:<br>
    
-        - 1;2;10
-          2;3;20
-          3;4;30
-          3;5;15
-          6;7;20
-          7;10;20
+           1;2;10
+           2;3;20
+           3;4;30
+           3;5;15
+           6;7;20
+           7;10;20
+           
    - File must have an extension: "*.csv"<br>
 
    - Now you can use this APP.<br>
@@ -55,7 +56,7 @@
    - Or upload the list to a file.<br>
      The checking file must by like:
 
-        - 1;3
-          6;10<br>
-          5;8<br>
+           1;3
+           6;10
+           5;8
    - File must have an extension: "*.csv"<br>
