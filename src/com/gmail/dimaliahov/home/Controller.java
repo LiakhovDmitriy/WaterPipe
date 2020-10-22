@@ -255,28 +255,24 @@ public class Controller {
 		}
 		try {
 			FileWriter writer = new FileWriter("test.csv");
-
+			writer.append("IDA");
+			writer.append(";");
+			writer.append("IDB");
+			writer.append("\n");
 			for (Rout r : last) {
 				String bol = String.valueOf(r.isRoutingBol());
 				if (!bol.equals("false")) {
 					String length = String.valueOf(r.getLength());
-
-					writer.append("IDA");
-					writer.append(";");
-					writer.append("IDB");
-					writer.append("\n");
 					writer.append(bol.toUpperCase());
 					writer.append(";");
 					writer.append(length);
+					writer.append("\n");
 
+				}else {
+					writer.append(bol.toUpperCase());
+					writer.append(";");
+					writer.append("\n");
 				}
-				writer.append("IDA");
-				writer.append(";");
-				writer.append("IDB");
-				writer.append("\n");
-				writer.append(bol.toUpperCase());
-				writer.append(";");
-				writer.append("\n");
 			}
 
 			writer.flush();
