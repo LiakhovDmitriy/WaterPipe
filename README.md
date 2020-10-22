@@ -36,23 +36,28 @@
         In [this](/out/production/dimaliahov/com/gmail/dimaliahov/db/DBwork.class) file.<br>
         Change data for communication with the database.<br><br>
 ## How to use
-   - You need to upload the input file first. Use
-
-#### The source file must by like:
-
+   - You need to upload the input file first. <br>
+   Use the button "Upload file" under "You need to upload the routing before you begin".<br>
+   File must be like this:<br>
+   
 1;2;10<br>
 2;3;20<br>
 3;4;30<br>
 3;5;15<br>
 6;7;20<br>
 7;10;20<br>
+<br>
 
-the file must have an extension: .csv<br>
+File must have an extension: "*.csv"<br>
 
-#### The checking file must by like:
+Now you can use this APP.<br>
+<br>
+You can quickly check one route.<br>
+<br>
+Or upload the list to a file.<br>
+The checking file must by like:
 
 1;3<br>
 6;10<br>
 5;8<br>
-
-the file must have an extension: .csv<br>
+File must have an extension: "*.csv"<br>
