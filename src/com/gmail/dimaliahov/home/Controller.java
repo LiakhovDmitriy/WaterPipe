@@ -42,40 +42,32 @@ public class Controller {
 	public void sourceUploud () {
 
 		File sourceFile = getFile();
-		if (sourceFile!=null){
+		if (sourceFile != null) {
 			purserSourceFileAndSaveToDB(sourceFile);
 
 			DBwork d = new DBwork();
 			getWindow("Now you have on DB \n " + d.getAllFromRouting());
-		}else  getWindow("Wrong");
+		} else getWindow("Wrong");
+
 	}
 
 	@FXML
 	public void listUploud () {
 		File uploudFile = getFile();
-		if (uploudFile!=null){
+		if (uploudFile != null) {
 			getWindow(checkFromList(uploudFile).toString());
-		}else getWindow("Wrong");
-
-
-
+		} else getWindow("Wrong");
 	}
 
 	@FXML
 	public void quickCheck () {
-		System.out.println(textA.getCharacters());
-		if (textA.getCharacters() == ""){
-			int a = Integer.parseInt(String.valueOf(textA.getCharacters()));
-			int b = Integer.parseInt(String.valueOf(textB.getCharacters()));
-			System.out.println(a);
 
-			StringBuilder stringBuilder = check(a, b);
+		int a = Integer.parseInt(String.valueOf(textA.getCharacters()));
+		int b = Integer.parseInt(String.valueOf(textB.getCharacters()));
 
-			getWindow(stringBuilder.toString());
-		}
-		getWindow("Wrong input");
+		StringBuilder stringBuilder = check(a, b);
 
-
+		getWindow(stringBuilder.toString());
 	}
 
 	@FXML
@@ -168,12 +160,11 @@ public class Controller {
 
 		Graph graph = new Graph(edges, N);
 		boolean[] discovered = new boolean[N];
-		int src = a, dest = b;
+
 		Stack<Integer> path = new Stack<>();
-		if (isConnected(graph, src, dest, discovered, path)) {
-			System.out.println("From " + src + " to " + dest + " path " + path);
-			str.append("From " + src + " to " + dest + " path " + path);
-			DBwork bwork = new DBwork();
+		if (isConnected(graph, a, b, discovered, path)) {
+//			System.out.println("From " + a + " to " + b + " path " + path);
+			str.append("From ").append(a).append(" to ").append(b).append(" path ").append(path);
 			int lengt = 0;
 
 			for (int i = 0; i < path.size(); i++) {
@@ -185,12 +176,11 @@ public class Controller {
 				Rout r = dBwork.getAllWherePointA(path.get(i), path.get(i + 1));
 				lengt = lengt + r.getLength();
 
-
 			}
 
-			str.append("\n Length is " + lengt);
+			str.append("\n Length is ").append(lengt);
 		} else {
-			System.out.println("No path exists between vertices " + src + " and " + dest);
+			System.out.println("No path exists between vertices " + a + " and " + b);
 		}
 
 		return str;
@@ -200,7 +190,7 @@ public class Controller {
 		StringBuilder str = new StringBuilder();
 		String line = "";
 		String cvsSplitBy = ";";
-		List<Rout> retRout = new ArrayList<>(); //
+		List<Rout> retRout = new ArrayList<>();
 
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 
@@ -232,17 +222,17 @@ public class Controller {
 		Graph graph = new Graph(edges, N);
 		boolean[] discovered = new boolean[N];
 		List<Rout> last = new ArrayList<>();
-		for (int i = 0; i < retRout.size(); i++) {
-			int src = retRout.get(i).getPointA(), dest = retRout.get(i).getPointB();
+		for (Rout rout : retRout) {
+			int src = rout.getPointA(), dest = rout.getPointB();
 			Stack<Integer> path = new Stack<>();
 
 			Rout n = new Rout();
 			if (isConnected(graph, src, dest, discovered, path)) {
 				System.out.println("From " + src + " to " + dest + " path " + path);
-				str.append("\n From " + src + " to " + dest + " path " + path);
+				str.append("\n From ").append(src).append(" to ").append(dest).append(" path ").append(path);
 				int lengt = 0;
-					n.setPointA(src);
-					n.setPointB(dest);
+				n.setPointA(src);
+				n.setPointB(dest);
 				for (int j = 0; j < path.size(); j++) {
 
 					path.get(j);
@@ -255,7 +245,7 @@ public class Controller {
 				n.setLength(lengt);
 				n.setRoutingBol(true);
 				last.add(n);
-				str.append("\n Length is " + lengt);
+				str.append("\n Length is ").append(lengt);
 				System.out.println(lengt);
 			} else {
 				System.out.println("No path exists between vertices " + src + " and " + dest);
@@ -266,15 +256,24 @@ public class Controller {
 		try {
 			FileWriter writer = new FileWriter("test.csv");
 
-			for (Rout r:last) {
+			for (Rout r : last) {
 				String bol = String.valueOf(r.isRoutingBol());
-				if (!bol.equals("false")){
+				if (!bol.equals("false")) {
 					String length = String.valueOf(r.getLength());
+
+					writer.append("IDA");
+					writer.append(";");
+					writer.append("IDB");
+					writer.append("\n");
 					writer.append(bol.toUpperCase());
 					writer.append(";");
 					writer.append(length);
 
 				}
+				writer.append("IDA");
+				writer.append(";");
+				writer.append("IDB");
+				writer.append("\n");
 				writer.append(bol.toUpperCase());
 				writer.append(";");
 				writer.append("\n");
@@ -285,12 +284,7 @@ public class Controller {
 		} catch (IOException e){
 			e.printStackTrace();
 		}
-
 		str.append("\nFile was save");
 		return str;
-
 	}
-
-
-
 }

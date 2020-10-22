@@ -4,14 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Graph {
-	// A List of Lists to represent an adjacency list
+
+	List<List<Integer>> adjList = null;
 
 	public Graph () {
 	}
 
-	List<List<Integer>> adjList = null;
-
-	// Constructor
 	public Graph (List<Edge> edges, int N) {
 		adjList = new ArrayList<>();
 
@@ -19,8 +17,7 @@ public class Graph {
 			adjList.add(new ArrayList<>());
 		}
 
-		// add edges to the undirected graph
-		for (Edge edge: edges) {
+		for (Edge edge : edges) {
 			adjList.get(edge.source).add(edge.dest);
 		}
 	}

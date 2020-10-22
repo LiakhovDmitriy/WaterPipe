@@ -1,9 +1,12 @@
 package com.gmail.dimaliahov.findRouting;
 
 public class Edge {
-	public final int source, dest;
 
-	public Edge(int source, int dest) {
+	public final int source;
+
+	public final int dest;
+
+	public Edge (int source, int dest) {
 		this.source = source;
 		this.dest = dest;
 	}
