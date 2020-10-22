@@ -60,3 +60,4 @@
            6;10
            5;8
    - File must have an extension: "*.csv"<br>
+## When you upload the list file. The answer will be saved in a file. "test.csv"
