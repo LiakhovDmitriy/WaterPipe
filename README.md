@@ -51,9 +51,9 @@
 
    - Now you can use this APP.<br>
 <br>
-   - You can quickly check one route.<br>
+    - You can quickly check one route.<br>
 <br>
-   - Or upload the list to a file.<br>
+    - Or upload the list to a file.<br>
      The checking file must by like:
 
            1;3
