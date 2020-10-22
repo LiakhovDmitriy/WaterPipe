@@ -36,6 +36,7 @@
         In [this](/out/production/dimaliahov/com/gmail/dimaliahov/db/DBwork.class) file.<br>
         Change data for communication with the database.<br><br>
 ## How to use
+   - You need to upload the input file first. Use
 
 #### The source file must by like:
 
