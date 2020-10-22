@@ -21,6 +21,17 @@
 ![GitHub Logo](/photo/homw_wrong_uploud.jpg)
 
 ## How to run
+    - Create DataBase H2;
+        - Perform:
+        CREATE TABLE IF NOT EXISTS ROUTING
+                (
+                ID     BIGINT PRIMARY KEY AUTO_INCREMENT,
+                pointA INT NOT NULL,
+                pointB INT NOT NULL,
+                length INT NOT NULL
+                );
+        - Enter where the base is located:
+        https://github.com/LiakhovDmitriy/WaterPipe/blob/master/out/production/dimaliahov/com/gmail/dimaliahov/db/DBwork.class
 
 ## How to use
 
