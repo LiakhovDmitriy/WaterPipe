@@ -40,24 +40,22 @@
    Use the button "Upload file" under "You need to upload the routing before you begin".<br>
    File must be like this:<br>
    
-1;2;10<br>
-2;3;20<br>
-3;4;30<br>
-3;5;15<br>
-6;7;20<br>
-7;10;20<br>
-<br>
+        - 1;2;10
+          2;3;20
+          3;4;30
+          3;5;15
+          6;7;20
+          7;10;20
+   - File must have an extension: "*.csv"<br>
 
-File must have an extension: "*.csv"<br>
-
-Now you can use this APP.<br>
+   - Now you can use this APP.<br>
 <br>
-You can quickly check one route.<br>
+   - You can quickly check one route.<br>
 <br>
-Or upload the list to a file.<br>
-The checking file must by like:
+   - Or upload the list to a file.<br>
+     The checking file must by like:
 
-1;3<br>
-6;10<br>
-5;8<br>
-File must have an extension: "*.csv"<br>
+        - 1;3
+          6;10<br>
+          5;8<br>
+   - File must have an extension: "*.csv"<br>
