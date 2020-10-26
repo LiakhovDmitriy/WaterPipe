@@ -10,6 +10,7 @@
     - Photo
     - How to run
     - How to use
+    - DESCRIPTION
 ## Photo
  
 ![GitHub Logo](/photo/home.jpg)
