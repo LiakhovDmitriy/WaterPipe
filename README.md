@@ -10,6 +10,7 @@
     - Photo
     - How to run
     - How to use
+    - DESCRIPTION
 ## Photo
  
 ![GitHub Logo](/photo/home.jpg)
@@ -18,7 +19,7 @@
 
 ![GitHub Logo](/photo/home_quick-check.jpg)
 
-![GitHub Logo](/photo/homw_wrong_uploud.jpg)
+![GitHub Logo](/photo/home_wrong_upload.jpg)
 
 ## How to run
    - For the start project you need to use SDK 11.
@@ -60,4 +61,8 @@
            6;10
            5;8
    - File must have an extension: "*.csv"<br>
-## When you upload the list file. The answer will be saved in a file. "test.csv"
+   - When you upload the list file. The answer will be saved in a file. "test.csv"<br>
+
+## Description
+
+![GitHub Logo](/photo/description.jpg)
