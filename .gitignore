@@ -7,4 +7,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
+/dimaliahov.iml
+
 /.idea/
